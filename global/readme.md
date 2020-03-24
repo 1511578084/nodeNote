@@ -1,0 +1,24 @@
+# global 全局变量
+1. 看着像全局变量，实则是模块注入的
++ __dirname
++ __fileName
++ module
++ exports
++ require
+2. 全局暴露的变量
++ Buffer
++ clearInterval
++ clearTimeout
++ clearImmediate
++ console
++ global
++ process
++ queueMicrotask(callback)
++ setImmediate
++ setTimeout
++ setInterval
++ TextDecoder
++ TextEncoder
++ URL
++ URLSearchParams
++ WebAssembly
