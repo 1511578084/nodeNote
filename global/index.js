@@ -1,3 +1,10 @@
+
+
+
+setImmediate(() => {
+    console.log('bb')
+})
+
 process.nextTick(() => {
 
     console.log(1)
@@ -20,6 +27,17 @@ Promise.resolve(1).then(() => {
 // 将前面的微任务进行排队，再调用callback
 queueMicrotask(() => {
     console.log(4)
+   
 })
 
-console.log(WebAssembly, TextEncoder)
+setImmediate(() => {
+    console.log('aa')
+})
+
+setImmediate(() => {
+    console.log('cc')
+})
+
+setTimeout(() => {
+    console.log('time')
+}, 10)
