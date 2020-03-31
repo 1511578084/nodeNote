@@ -5,6 +5,7 @@ setImmediate(() => {
     console.log('bb')
 })
 
+// 在微任务之前
 process.nextTick(() => {
 
     console.log(1)
@@ -40,4 +41,4 @@ setImmediate(() => {
 
 setTimeout(() => {
     console.log('time')
-}, 10)
+}, 5)
